@@ -24,7 +24,7 @@ ul	a{
 	
 	
 .row{
-	display:flex;'
+	display:flex;
 	flex-wrap:wrap;
 }
 
@@ -164,21 +164,29 @@ ul	a{
 @media (max-width:991px){
 	
 	
-	.nav{
-		flex-direction:coloumn!important;
-		 
-	}
+	
 	
 	.ul-line{
 		display:block;
-		text-align:center;
+		text-align:start;
 		display:none;
-		padding-top:30px;
+		padding-top:10px;
 		transition: 2s all ease-in-out; 
+		margin: 0px 60px;
+		animation:slideLeft 1s ease forwards;
+
+
+		
+	}
+	.ul-line li a{
+		position:relative;
+		opacity:0;
+		animation:slideTop .5s linear forwards;
+		animation-delay:clac(.2s * var(--i));
 		
 	}
 	.ul-line{
-		margin-top:30px;
+		margin-top:10px;
 	}
 	.sathish{
 		display:block;
@@ -192,6 +200,8 @@ ul	a{
 	}
 	.showmenu{
 		display:block;
+	    animation:slideTop 1s ease forwards;
+
 	}
 	
 	.log h1{
@@ -437,15 +447,7 @@ ul	a{
 }
 
 
-/* ...............................................................................section-skills............................................................. */
 
-
-/* #skill-sec{ */
-	/* background-color:gray; */
-/* } */
-
-
-/* ......................................................html............................... */
 
 
 
@@ -545,54 +547,74 @@ ul	a{
 	background:linear-gradient(#173b6c,#173b6c)
 }
 
-.c-img{
-	border: ;
-	border-radius:5px;
+
+
+
+
+
+.flip-card {
+	background-color: transparent;
+	
+	height: 200px;
+	perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+
+  }
+  
+  .flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+	background-color: #bbb;
+	color: black;
+  }
+  
+  .flip-card-back {
+	background-color: 1499dd;
+	color: white;
+	transform: rotateY(180deg);
+  }
+
+.link a{
+	color:white;
+	font-size: 40px;
+	display: inline-block;
+	text-decoration-style: none;
 }
 
-.crc-icon a{
-	position:absolute;
-	background-color:#00000042;
-	/* left:50%; */
-	bottom:0px;
+.link{
+	background-color: rgba(0, 0, 0, 0.137);
+	padding: 8px 10px;
+	
+}
+
+.flip-card-front img{
 	width:100%;
-    padding:5px 0px;
-	text-align:center;
-	opacity:0;
-	transition:0.5s all ease-in-out;
+	height: 200px;
 }
 
-.crc:hover a{
-	opacity:1;
-	transition:0.5s all ease-in-out;
-	padding:30px 0px;
-	
-}	
-
-.crc{
-	position:relative;
-}
-
-.crc::after{
-	    content: "";
-    position: absolute;
-    background-color: #00000042;
-    /* background-color: black; */
-    top: 0;
-    left: -300px;
-    width: 20%;
-    height: 100%;
-    transform: skewX(45deg);
-	transition:all 1.3s ease-in-out;
-}
-
-.crc:hover::after{
-	
-	margin:0px 1000px;
-	
-}
-
-
+/* .flip-card-inner:hover .link{
+	opacity: 1;
+	padding-top: 10px;
+} */
 
 
 
@@ -712,7 +734,21 @@ ul	a{
 
 
 @media (max-width:640px){
-	
+	.flip-card-front img{
+		width:100%;
+		height: 300px;
+	}
+	.link{
+		background-color: rgba(0, 0, 0, 0.137);
+		padding: 10px 10px;
+		
+	}
+	.home{
+		height:80vh;
+	}
+	.home-content{
+		max-width:800px;
+	}
 	
 	.about-me h1{
 	color:#173b6c;

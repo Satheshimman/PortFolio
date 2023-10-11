@@ -12,7 +12,7 @@ var menuu=document.getElementById("imman")
 	 
 var typed = new Typed(".text",{
 	
-	strings:["Frontend Devoloper...","Web Devoloper..."],
+	strings:["Frontend Devoloper","Web Devoloper","Free Lancer"],
 	typeSpeed:100,
 	backSpeed: 100,
 	backDelay: 1000,

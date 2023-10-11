@@ -745,6 +745,7 @@ ul	a{
 	}
 	.home{
 		height:80vh;
+		padding: 0px 10px;
 	}
 	.home-content{
 		max-width:800px;
@@ -777,6 +778,39 @@ ul	a{
 	
 }
 
+.my-skill {
+	
+	position:relative;
+	
+
+	
+	
+}
+
+.my-skill h1::after{
+	position:absolute;
+	content:"";
+	background-color:#1499dd;
+	width:36%;
+	height:4px;
+	bottom:-8px;
+	left:4%;
+	border-radius:5px;
+	padding-bottom:5px;
+	
+}
+.contact h1::after{
+	
+	position:absolute;
+	content:"";
+	background-color:#1499dd;
+	width:23%;
+	height:7px;
+	bottom:-8px;
+	left:15px;
+	border-radius:5px;
+	padding-bottom:5px;
+}
 	
 	
 }

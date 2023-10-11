@@ -811,6 +811,19 @@ ul	a{
 	border-radius:5px;
 	padding-bottom:5px;
 }
+
+.resume h1::after{
+	
+	position:absolute;
+	content:"";
+	background-color:#1499dd;
+	width:20%;
+	height:7px;
+	bottom:-8px;
+	left:10px;
+	border-radius:5px;
+	padding-bottom:5px;
+}
 	
 	
 }

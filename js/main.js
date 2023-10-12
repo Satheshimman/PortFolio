@@ -8,6 +8,13 @@ var menuu=document.getElementById("imman")
 		 
 		 
 	 })
+
+
+     var close=document.querySelector(".close")
+
+     close.addEventListener("click",()=>{
+     	 menulist.classList.toggle("showmenu")
+     })
 	 
 	 
 var typed = new Typed(".text",{

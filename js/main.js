@@ -10,16 +10,15 @@ var menuu=document.getElementById("imman")
 	 })
 
 
-     var close=document.querySelector(".close")
-
-     close.addEventListener("click",()=>{
-     	 menulist.classList.toggle("showmenu")
-     })
+    
 	 
+	 function sathesh(){
+		menulist.classList.remove("showmenu")
+	 }
 	 
 var typed = new Typed(".text",{
 	
-	strings:["Frontend Devoloper","Web Devoloper","Free Lancer"],
+	strings:["Frontend Devoloper","Web Devoloper"],
 	typeSpeed:100,
 	backSpeed: 100,
 	backDelay: 1000,

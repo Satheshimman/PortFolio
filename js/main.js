@@ -18,6 +18,17 @@ const sec4 = document.getElementById("section-4");
 const sec5 = document.getElementById("section-5");
 const sec6 = document.getElementById("section-6");
 
+function back() {
+  sec1.classList.add("d-none");
+  side.classList.remove("d-none");
+  side.classList.add("show");
+  sec2.classList.add("d-none");
+  sec3.classList.add("d-none");
+  sec4.classList.add("d-none");
+  sec5.classList.add("d-none");
+  sec6.classList.add("d-none");
+}
+
 function homee() {
   side.classList.add("d-none");
   sec1.classList.remove("d-none");

@@ -278,6 +278,7 @@ li a {
 }
 #rainclass {
   position: relative;
+  overflow: hidden;
 }
 @keyframes raineffect {
   0% {
@@ -304,5 +305,9 @@ li a {
 @media (min-width: 320px) and (max-width: 640px) {
   .header-border {
     border: none;
+  }
+
+  .cursoranime {
+    display: none;
   }
 }

@@ -111,6 +111,12 @@ li a {
   border: 1px solid var(--bordercolor);
   padding: 2px 20px;
   border-radius: 30px;
+  transition: all 0.5s linear;
+}
+
+.heading-border:hover {
+  background-color: #28e98c;
+  transition: all 0.5s linear;
 }
 .sideBorder {
   border-left: 2px solid #494949;
